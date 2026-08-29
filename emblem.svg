@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" fill="none">
+  <!-- ═══ PHILARKOPHY EMBLEM : sun, serpents & rose ═══ -->
+
+  <!-- faint halo -->
+  <circle cx="320" cy="95" r="72" stroke="#6e4034" stroke-width="1" opacity="0.5"/>
+  <circle cx="320" cy="95" r="78" stroke="#6e4034" stroke-width="0.6" opacity="0.35"/>
+
+  <!-- sun rays: straight -->
+  <g stroke="#e0a458" stroke-width="2" stroke-linecap="round">
+    <line x1="320" y1="30" x2="320" y2="46" transform="rotate(0 320 95)"/>
+    <line x1="320" y1="30" x2="320" y2="46" transform="rotate(45 320 95)"/>
+    <line x1="320" y1="30" x2="320" y2="46" transform="rotate(90 320 95)"/>
+    <line x1="320" y1="30" x2="320" y2="46" transform="rotate(135 320 95)"/>
+    <line x1="320" y1="30" x2="320" y2="46" transform="rotate(180 320 95)"/>
+    <line x1="320" y1="30" x2="320" y2="46" transform="rotate(225 320 95)"/>
+    <line x1="320" y1="30" x2="320" y2="46" transform="rotate(270 320 95)"/>
+    <line x1="320" y1="30" x2="320" y2="46" transform="rotate(315 320 95)"/>
+  </g>
+  <!-- sun rays: wavy -->
+  <g stroke="#c98d4e" stroke-width="1.6" stroke-linecap="round">
+    <path d="M320 28 q3 5 0 10 q-3 5 0 9" transform="rotate(22.5 320 95)"/>
+    <path d="M320 28 q3 5 0 10 q-3 5 0 9" transform="rotate(67.5 320 95)"/>
+    <path d="M320 28 q3 5 0 10 q-3 5 0 9" transform="rotate(112.5 320 95)"/>
+    <path d="M320 28 q3 5 0 10 q-3 5 0 9" transform="rotate(157.5 320 95)"/>
+    <path d="M320 28 q3 5 0 10 q-3 5 0 9" transform="rotate(202.5 320 95)"/>
+    <path d="M320 28 q3 5 0 10 q-3 5 0 9" transform="rotate(247.5 320 95)"/>
+    <path d="M320 28 q3 5 0 10 q-3 5 0 9" transform="rotate(292.5 320 95)"/>
+    <path d="M320 28 q3 5 0 10 q-3 5 0 9" transform="rotate(337.5 320 95)"/>
+  </g>
+
+  <!-- sun disc with face -->
+  <circle cx="320" cy="95" r="34" stroke="#e0a458" stroke-width="2.4" fill="#1a0c11"/>
+  <circle cx="320" cy="95" r="28" stroke="#9c6b47" stroke-width="0.8" opacity="0.7"/>
+  <!-- closed eyes -->
+  <path d="M306 90 q5 5 10 0" stroke="#e0a458" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M324 90 q5 5 10 0" stroke="#e0a458" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- nose & serene mouth -->
+  <path d="M320 92 q-2 6 1 9" stroke="#c98d4e" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M312 108 q8 6 16 0" stroke="#e0a458" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- left serpent: one smooth undulating body rising toward the sun -->
+  <g stroke="#e0a458" stroke-linecap="round" fill="none">
+    <path d="M84 206
+             C112 218 140 212 162 198
+             C182 185 174 170 190 159
+             C206 148 220 150 233 141"
+          stroke-width="3.2"/>
+    <!-- tail flick -->
+    <path d="M84 206 q-10 -2 -14 -10" stroke-width="2"/>
+    <!-- body scale ticks -->
+    <path d="M120 211 l3 -7 M146 206 l2 -7 M170 191 l-4 -6 M186 163 l6 4 M208 151 l2 7"
+          stroke="#9c6b47" stroke-width="1.1"/>
+    <!-- head, eye, tongue -->
+    <ellipse cx="239" cy="137" rx="8" ry="5.2" transform="rotate(-32 239 137)" fill="#e0a458" stroke="none"/>
+    <circle cx="240" cy="135" r="1.1" fill="#170a0f" stroke="none"/>
+    <path d="M246 132 l9 -6 m-9 6 l11 -1" stroke="#d97b7b" stroke-width="1.4"/>
+  </g>
+  <!-- right serpent (mirrored) -->
+  <g stroke="#e0a458" stroke-linecap="round" fill="none" transform="translate(640 0) scale(-1 1)">
+    <path d="M84 206
+             C112 218 140 212 162 198
+             C182 185 174 170 190 159
+             C206 148 220 150 233 141"
+          stroke-width="3.2"/>
+    <path d="M84 206 q-10 -2 -14 -10" stroke-width="2"/>
+    <path d="M120 211 l3 -7 M146 206 l2 -7 M170 191 l-4 -6 M186 163 l6 4 M208 151 l2 7"
+          stroke="#9c6b47" stroke-width="1.1"/>
+    <ellipse cx="239" cy="137" rx="8" ry="5.2" transform="rotate(-32 239 137)" fill="#e0a458" stroke="none"/>
+    <circle cx="240" cy="135" r="1.1" fill="#170a0f" stroke="none"/>
+    <path d="M246 132 l9 -6 m-9 6 l11 -1" stroke="#d97b7b" stroke-width="1.4"/>
+  </g>
+
+  <!-- rose beneath the sun -->
+  <g transform="translate(320 196)">
+    <!-- stem leaves -->
+    <path d="M-26 22 q12 -4 20 -14" stroke="#6d5a3c" stroke-width="1.6" fill="none"/>
+    <path d="M26 22 q-12 -4 -20 -14" stroke="#6d5a3c" stroke-width="1.6" fill="none"/>
+    <path d="M-30 24 q6 -12 -4 -18 q-2 12 4 18z" stroke="#6d5a3c" stroke-width="1.2" fill="#231318"/>
+    <path d="M30 24 q-6 -12 4 -18 q2 12 -4 18z" stroke="#6d5a3c" stroke-width="1.2" fill="#231318"/>
+    <!-- outer petals -->
+    <g stroke="#d97b7b" stroke-width="1.6" fill="#240f14">
+      <path d="M0 -24 q11 -2 12 10 q1 11 -12 14 q-13 -3 -12 -14 q1 -12 12 -10z" transform="rotate(0)"/>
+      <path d="M0 -24 q11 -2 12 10 q1 11 -12 14 q-13 -3 -12 -14 q1 -12 12 -10z" transform="rotate(72)"/>
+      <path d="M0 -24 q11 -2 12 10 q1 11 -12 14 q-13 -3 -12 -14 q1 -12 12 -10z" transform="rotate(144)"/>
+      <path d="M0 -24 q11 -2 12 10 q1 11 -12 14 q-13 -3 -12 -14 q1 -12 12 -10z" transform="rotate(216)"/>
+      <path d="M0 -24 q11 -2 12 10 q1 11 -12 14 q-13 -3 -12 -14 q1 -12 12 -10z" transform="rotate(288)"/>
+    </g>
+    <!-- inner whorl -->
+    <circle r="9" stroke="#d97b7b" stroke-width="1.4" fill="#1a0c11"/>
+    <path d="M0 -6 a6 6 0 1 1 -6 6 a4 4 0 1 0 4 -4" stroke="#d97b7b" stroke-width="1.2" fill="none"/>
+  </g>
+
+  <!-- scattered stars -->
+  <g fill="#e0a458" opacity="0.8">
+    <path d="M60 60 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+    <path d="M580 60 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+    <circle cx="120" cy="110" r="1.5"/>
+    <circle cx="520" cy="110" r="1.5"/>
+    <circle cx="90" cy="150" r="1"/>
+    <circle cx="550" cy="150" r="1"/>
+  </g>
+</svg>

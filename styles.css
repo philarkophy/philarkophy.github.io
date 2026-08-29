@@ -1,0 +1,206 @@
+/* ——— Philarkophy · vintage dark ——— */
+
+:root {
+  --bg: #170a0f;
+  --panel: #1d0d13;
+  --ink: #f0ddd5;
+  --ink-soft: #b18d8c;
+  --gold: #e0a458;
+  --gold-dim: #9c6b47;
+  --rose: #d97b7b;
+  --rule: #3a1f27;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse 120% 60% at 50% 0%, #231017 0%, var(--bg) 60%);
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 19px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+header.site {
+  padding: 40px 0 30px;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+
+header.site::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%);
+  width: 220px;
+  border-bottom: 1px solid var(--gold-dim);
+}
+
+.emblem {
+  width: min(440px, 86%);
+  margin: 0 auto 6px;
+  display: block;
+}
+
+.masthead {
+  font-size: 46px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: normal;
+  color: var(--gold);
+}
+
+.masthead a { color: var(--gold); text-decoration: none; }
+
+.tagline {
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 8px 0 24px;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+.tagline::before { content: "— "; color: var(--gold-dim); }
+.tagline::after  { content: " —"; color: var(--gold-dim); }
+
+nav.site a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  margin: 0 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+}
+
+nav.site a:hover, nav.site a[aria-current="page"] { color: var(--gold); }
+
+/* Essay list */
+main { padding: 48px 0 72px; }
+
+.essay-item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.essay-item h2 {
+  margin: 0 0 6px;
+  font-size: 27px;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+.essay-item h2 a { color: var(--ink); text-decoration: none; }
+.essay-item h2 a:hover { color: var(--gold); }
+
+.essay-meta {
+  color: var(--gold-dim);
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.08em;
+}
+
+.essay-item p { margin: 10px 0 0; color: var(--ink-soft); }
+
+/* Essay page */
+article h1 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.25;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+
+article .essay-meta { margin-bottom: 36px; display: block; }
+
+article p { margin: 0 0 1.4em; }
+
+article a { color: var(--gold); }
+
+article blockquote {
+  margin: 1.6em 0;
+  padding-left: 20px;
+  border-left: 2px solid var(--rose);
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+hr.flourish {
+  border: none;
+  text-align: center;
+  margin: 2.2em 0;
+}
+hr.flourish::after {
+  content: "☙ ❧";
+  color: var(--rose);
+  font-size: 16px;
+  letter-spacing: 0.6em;
+}
+
+/* Subscribe box */
+.subscribe {
+  margin-top: 56px;
+  padding: 30px 28px;
+  background: var(--panel);
+  border: 1px solid var(--gold-dim);
+  outline: 1px solid var(--rule);
+  outline-offset: 4px;
+  text-align: center;
+}
+
+.subscribe p { margin: 0 0 16px; color: var(--ink-soft); font-style: italic; }
+
+.button {
+  display: inline-block;
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.button:hover { background: var(--gold); color: #170a0f; }
+
+/* Footer */
+footer.site {
+  border-top: 1px solid var(--rule);
+  padding: 30px 0 52px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+
+footer.site::before {
+  content: "☉";
+  display: block;
+  color: var(--gold-dim);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer.site a { color: var(--ink-soft); margin: 0 8px; }
+footer.site a:hover { color: var(--gold); }
+
+@media (max-width: 480px) {
+  body { font-size: 17px; }
+  .masthead { font-size: 30px; letter-spacing: 0.1em; }
+  article h1 { font-size: 28px; }
+}
