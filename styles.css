@@ -204,3 +204,56 @@ footer.site a:hover { color: var(--gold); }
   .masthead { font-size: 30px; letter-spacing: 0.1em; }
   article h1 { font-size: 28px; }
 }
+
+/* Essay extras: subheadings, figures, pull quotes, references */
+article h2 {
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+  margin: 2.2em 0 0.6em;
+}
+
+article .standfirst {
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: -24px 0 36px;
+}
+
+article figure {
+  margin: 2em 0;
+  text-align: center;
+}
+
+article figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+
+article figcaption {
+  margin-top: 10px;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+article .pull {
+  margin: 1.8em 1.4em;
+  text-align: center;
+  font-style: italic;
+  color: var(--gold);
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+article ol.refs {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  padding-left: 1.4em;
+}
+
+article ol.refs li { margin-bottom: 0.5em; }
