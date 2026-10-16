@@ -226,10 +226,21 @@ article figure {
 }
 
 article figure img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 520px;
   height: auto;
   border: 1px solid var(--rule);
   border-radius: 4px;
+}
+
+article figcaption {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 480px) {
+  article figure img, article figcaption { max-width: 100%; }
 }
 
 article figcaption {
