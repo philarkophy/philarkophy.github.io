@@ -268,3 +268,43 @@ article ol.refs {
 }
 
 article ol.refs li { margin-bottom: 0.5em; }
+
+/* Series: tags on essays, the Series page, and each column's page */
+.series-tag {
+  color: var(--gold);
+  text-decoration: none;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+}
+
+.series-tag:hover { text-decoration: underline; }
+
+.series-item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.series-item h2 {
+  margin: 0 0 6px;
+  font-size: 27px;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+.series-item h2 a { color: var(--gold); text-decoration: none; }
+.series-item h2 a:hover { color: var(--ink); }
+
+.series-item p { margin: 10px 0 0; color: var(--ink-soft); }
+
+article.intro { margin-bottom: 8px; }
+article.intro .essay-meta { margin-bottom: 18px; }
+article.intro .standfirst { margin: 0 0 12px; }
+
+.empty {
+  color: var(--ink-soft);
+  font-style: italic;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+}
