@@ -41,15 +41,6 @@ header.site {
   position: relative;
 }
 
-header.site::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -3px;
-  transform: translateX(-50%);
-  width: 220px;
-  border-bottom: 1px solid var(--gold-dim);
-}
 
 .emblem {
   width: min(440px, 86%);
@@ -79,6 +70,14 @@ header.site::after {
 .tagline::before { content: "— "; color: var(--gold-dim); }
 .tagline::after  { content: " —"; color: var(--gold-dim); }
 
+nav.site {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0 4px 14px;
+  margin-bottom: -31px;
+  border-bottom: 1px solid var(--gold-dim);
+}
+
 nav.site a {
   color: var(--ink-soft);
   text-decoration: none;
@@ -87,6 +86,9 @@ nav.site a {
   text-transform: uppercase;
   letter-spacing: 0.22em;
 }
+
+nav.site a:first-child { margin-left: 0; }
+nav.site a:last-child { margin-right: -0.22em; }
 
 nav.site a:hover, nav.site a[aria-current="page"] { color: var(--gold); }
 
@@ -269,8 +271,10 @@ article ol.refs {
 
 article ol.refs li { margin-bottom: 0.5em; }
 
-/* Series: tags on essays, the Series page, and each column's page */
-.series-tag {
+.masthead { margin-bottom: 22px; }
+
+/* Lenses: tags on essays, the Lenses page, and each lens's page */
+.lens-tag {
   color: var(--gold);
   text-decoration: none;
   font-style: normal;
@@ -279,32 +283,81 @@ article ol.refs li { margin-bottom: 0.5em; }
   font-size: 12px;
 }
 
-.series-tag:hover { text-decoration: underline; }
+.lens-tag:hover { text-decoration: underline; }
 
-.series-item {
-  padding: 28px 0;
-  border-bottom: 1px solid var(--rule);
+article.intro { margin-bottom: 28px; }
+article.intro .standfirst { margin: 0; }
+
+.lens-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 8px 0 8px;
 }
 
-.series-item h2 {
-  margin: 0 0 6px;
-  font-size: 27px;
-  font-weight: normal;
-  letter-spacing: 0.02em;
+.lens-card {
+  display: block;
+  padding: 26px 24px 24px;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color .2s ease;
 }
 
-.series-item h2 a { color: var(--gold); text-decoration: none; }
-.series-item h2 a:hover { color: var(--ink); }
+.lens-card:hover { border-color: var(--gold-dim); }
 
-.series-item p { margin: 10px 0 0; color: var(--ink-soft); }
+.lens-glyph {
+  display: block;
+  width: 44px;
+  height: 44px;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
 
-article.intro { margin-bottom: 8px; }
-article.intro .essay-meta { margin-bottom: 18px; }
-article.intro .standfirst { margin: 0 0 12px; }
+.lens-glyph svg { width: 100%; height: 100%; display: block; }
+
+.lens-name {
+  display: block;
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.lens-card:hover .lens-name { color: var(--gold); }
+
+.lens-topic {
+  display: block;
+  color: var(--gold-dim);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 12px;
+}
+
+.lens-blurb {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.lens-intro .lens-glyph { margin-bottom: 18px; }
+.lens-intro .essay-meta { display: block; margin-bottom: 18px; }
 
 .empty {
   color: var(--ink-soft);
   font-style: italic;
   padding: 28px 0;
+  border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
+}
+
+@media (max-width: 600px) {
+  .lens-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  nav.site a { margin: 0 9px; letter-spacing: 0.14em; font-size: 13px; }
 }
